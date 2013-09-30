@@ -323,7 +323,13 @@ then
   if test "$MUMPS" != ""
   then
     # Check all files needed
-    AC_CHECK_FILES( $MUMPS_INC/dmumps_c.h $MUMPS_LIB/libdmumps.a $MUMPS_LIB/libmumps_common.a $MUMPS_LIB/libpord.a $MUMPS_LIB/libscalapack.a $MUMPS_LIB/libblacs.a $MUMPS_LIB/libparmetis.a $MUMPS_LIB/libmetis.a $MUMPS_LIB/libptscotch.a $MUMPS_LIB/libptesmumps.a, ,[ MUMPS="" ])
+    AC_CHECK_FILES( $MUMPS_INC/dmumps_c.h $MUMPS_LIB/libdmumps.a $MUMPS_LIB/libmumps_common.a $MUMPS_LIB/libpord.a $MUMPS_LIB/libscalapack.a $MUMPS_LIB/libblacs.a $MUMPS_LIB/libparmetis.a $MUMPS_LIB/libmetis.a $MUMPS_LIB/libptscotch.a $MUMPS_LIB/libptesmumps.a, ,[ MUMPSLIBRARIESCHECK="mumpslibrariesnotfound" ])
+  fi
+  # PETSc-3.4 installs slightly different libraries, if the previous test failed, check for those instead
+  if test "$MUMPSLIBRARIESCHECK" == "mumpslibrariesnotfound"
+  then
+    # Check all files needed
+    AC_CHECK_FILES( $MUMPS_INC/dmumps_c.h $MUMPS_LIB/libdmumps.a $MUMPS_LIB/libmumps_common.a $MUMPS_LIB/libpord.a $MUMPS_LIB/libscalapack.a $MUMPS_LIB/libfblas.a $MUMPS_LIB/libparmetis.so $MUMPS_LIB/libmetis.so $MUMPS_LIB/libptscotch.a $MUMPS_LIB/libptesmumps.a, ,[ MUMPS="" ])
   fi
   
   if test "$MUMPS" == ""
@@ -334,9 +340,16 @@ then
     echo "   Includes : $MUMPS_INC"
     echo "   Libraries: $MUMPS_LIB"
     
-    EXTRA_INCS="$EXTRA_INCS -I$MUMPS_INC"
-    EXTRA_LIBS="$EXTRA_LIBS -L$MUMPS_LIB -ldmumps -lmumps_common -lpord -lscalapack -lblacs -lblas -lparmetis -lmetis -lptscotch -lptesmumps"
-    CXXFLAGS="$CXXFLAGS -DBOUT_HAS_MUMPS"
+    if test "$MUMPSLIBRARIESCHECK" == "mumpslibrariesnotfound"
+    then
+      EXTRA_INCS="$EXTRA_INCS -I$MUMPS_INC"
+      EXTRA_LIBS="$EXTRA_LIBS -L$MUMPS_LIB -ldmumps -lmumps_common -lpord -lscalapack -lfblas -lblas -lparmetis -lmetis -lptscotch -lptesmumps"
+      CXXFLAGS="$CXXFLAGS -DBOUT_HAS_MUMPS"
+    else
+      EXTRA_INCS="$EXTRA_INCS -I$MUMPS_INC"
+      EXTRA_LIBS="$EXTRA_LIBS -L$MUMPS_LIB -ldmumps -lmumps_common -lpord -lscalapack -lblacs -lblas -lparmetis -lmetis -lptscotch -lptesmumps"
+      CXXFLAGS="$CXXFLAGS -DBOUT_HAS_MUMPS"
+    fi
   fi
   echo
 fi

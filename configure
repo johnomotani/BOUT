@@ -2723,6 +2723,272 @@ cat >>confdefs.h <<_ACEOF
 _ACEOF
 
 else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libdmumps.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libdmumps.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libdmumps.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libdmumps.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libdmumps.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libmumps_common.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libmumps_common.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libmumps_common.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libmumps_common.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libmumps_common.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libpord.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libpord.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libpord.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libpord.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libpord.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libscalapack.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libscalapack.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libscalapack.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libscalapack.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libscalapack.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libblacs.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libblacs.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libblacs.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libblacs.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libblacs.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libparmetis.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libparmetis.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libparmetis.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libparmetis.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libparmetis.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libmetis.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libmetis.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libmetis.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libmetis.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libmetis.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libptscotch.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libptscotch.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libptscotch.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libptscotch.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libptscotch.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libptesmumps.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libptesmumps.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libptesmumps.a... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_LIB/libptesmumps.a"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_LIB/libptesmumps.a" | $as_tr_cpp` 1
+_ACEOF
+
+else
+   MUMPSLIBRARIESCHECK="mumpslibrariesnotfound"
+fi
+
+  fi
+  # PETSc-3.4 installs slightly different libraries, if the previous test failed, check for those instead
+  if test "$MUMPSLIBRARIESCHECK" == "mumpslibrariesnotfound"
+  then
+    # Check all files needed
+    as_ac_File=`$as_echo "ac_cv_file_$MUMPS_INC/dmumps_c.h" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_INC/dmumps_c.h" >&5
+$as_echo_n "checking for $MUMPS_INC/dmumps_c.h... " >&6; }
+if eval \${$as_ac_File+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  test "$cross_compiling" = yes &&
+  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+if test -r "$MUMPS_INC/dmumps_c.h"; then
+  eval "$as_ac_File=yes"
+else
+  eval "$as_ac_File=no"
+fi
+fi
+eval ac_res=\$$as_ac_File
+	       { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+$as_echo "$ac_res" >&6; }
+if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
+
+cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$MUMPS_INC/dmumps_c.h" | $as_tr_cpp` 1
+_ACEOF
+
+else
    MUMPS=""
 fi
 as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libdmumps.a" | $as_tr_sh`
@@ -2829,15 +3095,15 @@ _ACEOF
 else
    MUMPS=""
 fi
-as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libblacs.a" | $as_tr_sh`
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libblacs.a" >&5
-$as_echo_n "checking for $MUMPS_LIB/libblacs.a... " >&6; }
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libfblas.a" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libfblas.a" >&5
+$as_echo_n "checking for $MUMPS_LIB/libfblas.a... " >&6; }
 if eval \${$as_ac_File+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   test "$cross_compiling" = yes &&
   as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
-if test -r "$MUMPS_LIB/libblacs.a"; then
+if test -r "$MUMPS_LIB/libfblas.a"; then
   eval "$as_ac_File=yes"
 else
   eval "$as_ac_File=no"
@@ -2849,21 +3115,21 @@ $as_echo "$ac_res" >&6; }
 if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
 
 cat >>confdefs.h <<_ACEOF
-#define `$as_echo "HAVE_$MUMPS_LIB/libblacs.a" | $as_tr_cpp` 1
+#define `$as_echo "HAVE_$MUMPS_LIB/libfblas.a" | $as_tr_cpp` 1
 _ACEOF
 
 else
    MUMPS=""
 fi
-as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libparmetis.a" | $as_tr_sh`
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libparmetis.a" >&5
-$as_echo_n "checking for $MUMPS_LIB/libparmetis.a... " >&6; }
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libparmetis.so" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libparmetis.so" >&5
+$as_echo_n "checking for $MUMPS_LIB/libparmetis.so... " >&6; }
 if eval \${$as_ac_File+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   test "$cross_compiling" = yes &&
   as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
-if test -r "$MUMPS_LIB/libparmetis.a"; then
+if test -r "$MUMPS_LIB/libparmetis.so"; then
   eval "$as_ac_File=yes"
 else
   eval "$as_ac_File=no"
@@ -2875,21 +3141,21 @@ $as_echo "$ac_res" >&6; }
 if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
 
 cat >>confdefs.h <<_ACEOF
-#define `$as_echo "HAVE_$MUMPS_LIB/libparmetis.a" | $as_tr_cpp` 1
+#define `$as_echo "HAVE_$MUMPS_LIB/libparmetis.so" | $as_tr_cpp` 1
 _ACEOF
 
 else
    MUMPS=""
 fi
-as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libmetis.a" | $as_tr_sh`
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libmetis.a" >&5
-$as_echo_n "checking for $MUMPS_LIB/libmetis.a... " >&6; }
+as_ac_File=`$as_echo "ac_cv_file_$MUMPS_LIB/libmetis.so" | $as_tr_sh`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $MUMPS_LIB/libmetis.so" >&5
+$as_echo_n "checking for $MUMPS_LIB/libmetis.so... " >&6; }
 if eval \${$as_ac_File+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   test "$cross_compiling" = yes &&
   as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
-if test -r "$MUMPS_LIB/libmetis.a"; then
+if test -r "$MUMPS_LIB/libmetis.so"; then
   eval "$as_ac_File=yes"
 else
   eval "$as_ac_File=no"
@@ -2901,7 +3167,7 @@ $as_echo "$ac_res" >&6; }
 if eval test \"x\$"$as_ac_File"\" = x"yes"; then :
 
 cat >>confdefs.h <<_ACEOF
-#define `$as_echo "HAVE_$MUMPS_LIB/libmetis.a" | $as_tr_cpp` 1
+#define `$as_echo "HAVE_$MUMPS_LIB/libmetis.so" | $as_tr_cpp` 1
 _ACEOF
 
 else
@@ -2970,9 +3236,16 @@ fi
     echo "   Includes : $MUMPS_INC"
     echo "   Libraries: $MUMPS_LIB"
 
-    EXTRA_INCS="$EXTRA_INCS -I$MUMPS_INC"
-    EXTRA_LIBS="$EXTRA_LIBS -L$MUMPS_LIB -ldmumps -lmumps_common -lpord -lscalapack -lblacs -lblas -lparmetis -lmetis -lptscotch -lptesmumps"
-    CXXFLAGS="$CXXFLAGS -DBOUT_HAS_MUMPS"
+    if test "$MUMPSLIBRARIESCHECK" == "mumpslibrariesnotfound"
+    then
+      EXTRA_INCS="$EXTRA_INCS -I$MUMPS_INC"
+      EXTRA_LIBS="$EXTRA_LIBS -L$MUMPS_LIB -ldmumps -lmumps_common -lpord -lscalapack -lfblas -lblas -lparmetis -lmetis -lptscotch -lptesmumps"
+      CXXFLAGS="$CXXFLAGS -DBOUT_HAS_MUMPS"
+    else
+      EXTRA_INCS="$EXTRA_INCS -I$MUMPS_INC"
+      EXTRA_LIBS="$EXTRA_LIBS -L$MUMPS_LIB -ldmumps -lmumps_common -lpord -lscalapack -lblacs -lblas -lparmetis -lmetis -lptscotch -lptesmumps"
+      CXXFLAGS="$CXXFLAGS -DBOUT_HAS_MUMPS"
+    fi
   fi
   echo
 fi
